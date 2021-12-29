@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        fieldset {
+            border: 1.5px solid rgb(102, 10, 7)
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.829)
+        }
+
+        div {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> New Student </h1>
+    <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="name"> Full Name </label>
+                    <input type="text" id="name" placeholder="Enter Your Full Name" name="fullname">
+                </div>
+
+                <div>
+                    <label for="birthday"> Birthday </label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div> Gender
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male"> Male </label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female"> Female </label>
+                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="email"> Email: </label>
+                        <input type="email" id="email" name="eaddress">
+                    </div>
+    
+                    <div>
+                        <label for="mobile"> Phone </label>
+                        <input type="tel" id="mobile" name="number">
+                    </div>
+    
+                    <div>
+                        <label for="address"> Address </label>
+                        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>University Information</legend>
+                        <label for="faculty">Choose Your Faculty</label>
+                        <select name="Faculty" id="faculty">
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Business Administration">Business Administration</option>
+                            <option value="Engineering">Engineering </option>
+                            <option value="Pharmacy">Pharmacy</option>
+                            <option value="Political Science">Political Science</option>
+                            <option value="Dentistry">Dentistry</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit">Add</button>
+    
+    </form>
+</body>
+
+</html>
